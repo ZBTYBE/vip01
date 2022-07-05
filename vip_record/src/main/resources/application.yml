@@ -1,0 +1,24 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///vip_user
+    username: root
+    password: 1234
+    type: com.alibaba.druid.pool.DruidDataSource
+  jms:
+    pub-sub-domain: true
+    template:
+      default-destination: vip
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+
+
+
+
